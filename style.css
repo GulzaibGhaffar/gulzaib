@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+background: url(image.jpg) no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.container {
+    position: relative;
+    height: 400px;
+    width: 700px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+    border-radius: 15px;
+    background: rgba(235, 226, 226, 0.128);
+    box-shadow: -0px 10px 25px #865a46e1;
+
+}
+
+.navbar{
+top: 8px;
+height: 55px;
+width: 500px;
+background: rgba(200,180, 190, 0.3);
+border-radius: 25px;
+box-shadow: -0px 10px 25px #ff671f;
+ 
+
+
+}
+.imgbox{
+    height: 150px;
+    width: 150px;
+border-radius: 50%;
+background: url(image.jpg) no-repeat;
+background-position: center;
+background-size: cover;
+transform: all 0.50s ease;
+box-shadow: -0px 10px 25px #1a0c53;
+
+}
+
+.navbar ul{
+position: relative;
+height: 100%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+list-style: none;
+}
+.navbar li{
+position: relative;
+height: 100%;
+width: 20%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.navbar a{
+
+position: relative;
+align-items: center;
+display: flex;
+justify-content: center;
+flex-direction: column;
+text-decoration: none;
+
+
+}
+icon{
+    position: relative;
+font-size: 1.5em;
+align-items: center;
+justify-content: center;
+display: flex;
+flex-direction: column;
+transition: 0.5s;
+line-height: 70px;
+z-index: 5;
+color: chartreuse;
+}
+.navbar li:hover .icon{
+    transform: translateY(-10px);
+    color: #fff;
+
+}
+.text{
+    text-transform: capitalize;
+    position: absolute;
+    font-size: 0.9em;
+    transition: 0.5s;
+transform: translateY(20px);
+opacity: 0;
+color: #fff;
+}
+.navbar li:hover .text{
+opacity: 1;
+transform: translateY(10px);
+
+}
+.display{
+position: absolute;
+justify-content: center;
+align-items: center;
+height: 80px;
+width: 100px;
+border-radius: 20px;
+transform: all 0.5s ease;
+opacity: 0;
+}
+.display video {
+    position: absolute;
+justify-content: center;
+align-items: center;
+height: 80px;
+width: 100px;
+border-radius: 20px;
+
+
+}
+.navbar li:hover .display{
+transform: translateY(-80px);
+transition: 0.50s;
+opacity: 1;
+
+
+}
+
+
+
+ 
